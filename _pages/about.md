@@ -10,7 +10,7 @@ redirect_from:
 I am a third-year Ph.D. student in the Department of Computer Science at [University of Maryland, College Park](https://umd.edu/), advised by [Prof. Tianyi Zhou](https://tianyizhou.github.io/). 
 My research interests are data-centric AI, computer vision (CV), vision-language models (VLMs), especially exploring synthetic data generation to improve model training and evaluation process.
 
-I got my M.Eng. degree in Industrial Engineering and Operations Research at [Univeristy of California, Berkeley](https://ieor.berkeley.edu/). Before joining UCB, I obtained my B.Eng. degree in Industrial Engineerinig at [Tsinghua University](https://www.ie.tsinghua.edu.cn/eng/). 
+I got my M.Eng. degree in Industrial Engineering and Operations Research at [University of California, Berkeley](https://ieor.berkeley.edu/). Before joining UCB, I obtained my B.Eng. degree in Industrial Engineerinig at [Tsinghua University](https://www.ie.tsinghua.edu.cn/eng/). 
 
 [//]: # (I previously worked at ByteDance)
 
