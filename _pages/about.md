@@ -26,6 +26,9 @@ Publications
 1. Lichen Li, Hengguang Zhou, **Yijun Liang**, Tianyi Zhou, Cho-Jui Hsieh.  
    **[Do Prompt-Elicited Trajectories Reflect Training-Time Reward Hacking? A Systematic Study on Monitoring Training-Time Reward Hacking in Code Generations](https://arxiv.org/abs/2604.23488).** *arXiv*, 2026.
 
+1. Chenrui Fan*, **Yijun Liang***, Shweta Bhardwaj*, Kwesi Cobbina, Ming Li, Tianyi Zhou.  
+   **[V-REX: Benchmarking Exploratory Visual Reasoning via Chain-of-Questions](https://arxiv.org/abs/2512.11995).** **ECCV 2026**.
+
 1. **Yijun Liang***, Ming Li*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou.  
    **[ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness](https://arxiv.org/abs/2504.10514).** **NeurIPS 2025**.
 
@@ -33,7 +36,7 @@ Publications
    **[Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion](https://arxiv.org/abs/2410.13674).** **ICCV 2025**.
 
 1. Ming Li, Pei Chen, Chenguang Wang, Hongyu Zhao, **Yijun Liang**, Yupeng Hou, Fuxiao Liu, Tianyi Zhou.  
-   **[Mosaic-IT: Free Compositional Data Augmentation Improves Instruction Tuning](https://aclanthology.org/2025.findings-acl.1297/).** **ACL 2025 Findings**.
+   **[Mosaic-IT: Free Compositional Data Augmentation Improves Instruction Tuning](https://aclanthology.org/2025.findings-acl.1297/).** **ACL 2025**.
 
 1. Ming Li, Chenguang Wang, **Yijun Liang**, Xiyao Wang, Yuhang Zhou, Xiyang Wu, Yuqing Zhang, Ruiyi Zhang, Tianyi Zhou.  
    **[CaughtCheating: Is Your MLLM a Good Cheating Detective? Exploring the Boundary of Visual Perception and Reasoning](https://arxiv.org/abs/2507.00045).** *arXiv*, 2025.
@@ -42,7 +45,7 @@ Publications
    **[PEDANTS: Cheap but Effective and Interpretable Answer Equivalence](https://arxiv.org/abs/2402.11161).** **EMNLP 2024**.
 
 1. Shuai Peng, Di Fu, **Yijun Liang**, Liangcai Gao, Zhi Tang.  
-   **[GeoDRL: A Self-Learning Framework for Geometry Problem Solving Using Reinforcement Learning in Deductive Reasoning](https://aclanthology.org/2023.findings-acl.850.pdf).** **ACL 2023 Findings**.
+   **[GeoDRL: A Self-Learning Framework for Geometry Problem Solving Using Reinforcement Learning in Deductive Reasoning](https://aclanthology.org/2023.findings-acl.850.pdf).** **ACL 2023**.
 
 1. Shuai Peng, Di Fu, Yong Cao, **Yijun Liang**, Gu Xu, Liangcai Gao, Zhi Tang.  
    **[Compute Like Humans: Interpretable Step-by-Step Symbolic Computation with Deep Neural Network](https://dl.acm.org/doi/abs/10.1145/3534678.3539276).** **KDD 2022**.
