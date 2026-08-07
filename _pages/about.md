@@ -14,25 +14,31 @@ I got my M.Eng. degree in Industrial Engineering and Operations Research at [Uni
 
 [//]: # (I previously worked at ByteDance)
 
-
 Publications
 ======
+
 1. **Yijun Liang**, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu.  
    **[Visual Contrastive Self-Distillation](https://arxiv.org/abs/2607.21556).** *arXiv*, 2026.
 
 1. **Yijun Liang**, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou.  
    **[Self-Evolving Visual Questioner](https://arxiv.org/abs/2606.13929).** *arXiv*, 2026.
 
+1. Han Chen, Ming Li, Chenguang Wang, **Yijun Liang**, Dawei Zhou, Hong Jiao, Tianyi Zhou.  
+   **[LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment](https://arxiv.org/abs/2606.18709).** *arXiv*, 2026.
+
 1. Lichen Li, Hengguang Zhou, **Yijun Liang**, Tianyi Zhou, Cho-Jui Hsieh.  
    **[Do Prompt-Elicited Trajectories Reflect Training-Time Reward Hacking? A Systematic Study on Monitoring Training-Time Reward Hacking in Code Generations](https://arxiv.org/abs/2604.23488).** *arXiv*, 2026.
 
-1. Chenrui Fan*, **Yijun Liang***, Shweta Bhardwaj*, Kwesi Cobbina, Ming Li, Tianyi Zhou.  
+1. Qitong Wang, **Yijun Liang**, Ming Li, Tianyi Zhou, Christopher Rasmussen.  
+   **[History-Conditioned Spatio-Temporal Visual Token Pruning for Efficient Vision-Language Navigation](https://arxiv.org/abs/2603.06480).** **IROS 2026**.
+
+1. Chenrui Fan\*, **Yijun Liang**\*, Shweta Bhardwaj\*, Kwesi Cobbina, Ming Li, Tianyi Zhou.  
    **[V-REX: Benchmarking Exploratory Visual Reasoning via Chain-of-Questions](https://arxiv.org/abs/2512.11995).** **ECCV 2026**.
 
-1. **Yijun Liang***, Ming Li*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou.  
+1. **Yijun Liang**\*, Ming Li\*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou.  
    **[ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness](https://arxiv.org/abs/2504.10514).** **NeurIPS 2025**.
 
-1. **Yijun Liang***, Shweta Bhardwaj*, Tianyi Zhou.  
+1. **Yijun Liang**\*, Shweta Bhardwaj\*, Tianyi Zhou.  
    **[Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion](https://arxiv.org/abs/2410.13674).** **ICCV 2025**.
 
 1. Ming Li, Pei Chen, Chenguang Wang, Hongyu Zhao, **Yijun Liang**, Yupeng Hou, Fuxiao Liu, Tianyi Zhou.  
@@ -49,3 +55,4 @@ Publications
 
 1. Shuai Peng, Di Fu, Yong Cao, **Yijun Liang**, Gu Xu, Liangcai Gao, Zhi Tang.  
    **[Compute Like Humans: Interpretable Step-by-Step Symbolic Computation with Deep Neural Network](https://dl.acm.org/doi/abs/10.1145/3534678.3539276).** **KDD 2022**.
+
