@@ -17,14 +17,32 @@ I got my M.Eng. degree in Industrial Engineering and Operations Research at [Uni
 
 Publications
 ======
-1. **Yijun Liang**, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu, *"**Visual Contrastive Self-Distillation**"*, arXiv, [[Paper]](https://arxiv.org/abs/2607.21556).
-1. **Yijun Liang**, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou, *"**Self-Evolving Visual Questioner**"*, arXiv, [[Paper]](https://arxiv.org/abs/2606.13929).
-1. Lichen Li, Hengguang Zhou, **Yijun Liang**, Tianyi Zhou, Cho-Jui Hsieh, *"**Do Prompt-Elicited Trajectories Reflect Training-Time Reward Hacking? A Systematic Study on Monitoring Training-Time Reward Hacking in Code Generations**"*, arXiv, [[Paper]](https://arxiv.org/abs/2604.23488).
-1. **Yijun Liang***, Ming Li*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou, *"**ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness**"*, **Neurips2025**, [[Paper]](https://arxiv.org/abs/2504.10514).
-1. **Yijun Liang***, Shweta Bhardwaj*, Tianyi Zhou, *"**Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion**"*, **ICCV2025**, [[Paper]](https://arxiv.org/abs/2410.13674).
-2. Ming Li, Pei Chen, Chenguang Wang, Hongyu Zhao, **Yijun Liang**, Yupeng Hou, Fuxiao Liu, Tianyi Zhou, *"**Mosaic-IT: Free Compositional Data Augmentation Improves Instruction Tuning**"*, arXiv, [[Paper]](https://arxiv.org/abs/2405.13326).
-3. Ming Li, Chenguang Wang, **Yijun Liang**, Xiyao Wang, Yuhang Zhou, Xiyang Wu, Yuqing Zhang, Ruiyi Zhang, Tianyi Zhou. *"**CaughtCheating: Is Your MLLM a Good Cheating Detective? Exploring the Boundary of Visual Perception and Reasoning**"*, arXiv, [[Paper]](https://arxiv.org/abs/2507.00045).
-3. Zongxia Li, Ishani Mondal, **Yijun Liang**, Huy Nghiem, Jordan Lee Boyd-Graber, *"**PEDANTS: Cheap but Effective and Interpretable Answer Equivalence**"*, **EMNLP 2024**, [[Paper]](https://arxiv.org/abs/2402.11161).
-4. Shuai Peng, Di Fu, **Yijun Liang**, Liangcai Gao, Zhi Tang, *"**Geodrl: A self-learning framework for geometry problem solving using reinforcement learning in deductive reasoning**"*, **ACL 2023**, [[Paper]](https://aclanthology.org/2023.findings-acl.850.pdf). 
-5. Shuai Peng, Di Fu, Yong Cao, **Yijun Liang**, Gu Xu, Liangcai Gao, Zhi Tang, *"**Compute Like Humans: Interpretable Step-by-step Symbolic Computation with Deep Neural Network**"*, **KDD 2022**, [[Paper]](https://dl.acm.org/doi/abs/10.1145/3534678.3539276). 
+1. **Yijun Liang**, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu.  
+   **[Visual Contrastive Self-Distillation](https://arxiv.org/abs/2607.21556).** *arXiv*, 2026.
 
+1. **Yijun Liang**, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou.  
+   **[Self-Evolving Visual Questioner](https://arxiv.org/abs/2606.13929).** *arXiv*, 2026.
+
+1. Lichen Li, Hengguang Zhou, **Yijun Liang**, Tianyi Zhou, Cho-Jui Hsieh.  
+   **[Do Prompt-Elicited Trajectories Reflect Training-Time Reward Hacking? A Systematic Study on Monitoring Training-Time Reward Hacking in Code Generations](https://arxiv.org/abs/2604.23488).** *arXiv*, 2026.
+
+1. **Yijun Liang***, Ming Li*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou.  
+   **[ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness](https://arxiv.org/abs/2504.10514).** **NeurIPS 2025**.
+
+1. **Yijun Liang***, Shweta Bhardwaj*, Tianyi Zhou.  
+   **[Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion](https://arxiv.org/abs/2410.13674).** **ICCV 2025**.
+
+1. Ming Li, Pei Chen, Chenguang Wang, Hongyu Zhao, **Yijun Liang**, Yupeng Hou, Fuxiao Liu, Tianyi Zhou.  
+   **[Mosaic-IT: Free Compositional Data Augmentation Improves Instruction Tuning](https://aclanthology.org/2025.findings-acl.1297/).** **ACL 2025 Findings**.
+
+1. Ming Li, Chenguang Wang, **Yijun Liang**, Xiyao Wang, Yuhang Zhou, Xiyang Wu, Yuqing Zhang, Ruiyi Zhang, Tianyi Zhou.  
+   **[CaughtCheating: Is Your MLLM a Good Cheating Detective? Exploring the Boundary of Visual Perception and Reasoning](https://arxiv.org/abs/2507.00045).** *arXiv*, 2025.
+
+1. Zongxia Li, Ishani Mondal, **Yijun Liang**, Huy Nghiem, Jordan Lee Boyd-Graber.  
+   **[PEDANTS: Cheap but Effective and Interpretable Answer Equivalence](https://arxiv.org/abs/2402.11161).** **EMNLP 2024**.
+
+1. Shuai Peng, Di Fu, **Yijun Liang**, Liangcai Gao, Zhi Tang.  
+   **[GeoDRL: A Self-Learning Framework for Geometry Problem Solving Using Reinforcement Learning in Deductive Reasoning](https://aclanthology.org/2023.findings-acl.850.pdf).** **ACL 2023 Findings**.
+
+1. Shuai Peng, Di Fu, Yong Cao, **Yijun Liang**, Gu Xu, Liangcai Gao, Zhi Tang.  
+   **[Compute Like Humans: Interpretable Step-by-Step Symbolic Computation with Deep Neural Network](https://dl.acm.org/doi/abs/10.1145/3534678.3539276).** **KDD 2022**.
