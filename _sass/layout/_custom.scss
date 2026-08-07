@@ -1,0 +1,487 @@
+/* ==========================================================================
+   CUSTOM LAYER
+   --------------------------------------------------------------------------
+   Site-specific refinements layered on top of the stock AcademicPages theme.
+   Imported last from assets/css/main.scss so everything here wins without
+   needing !important.
+   ========================================================================== */
+
+/*
+   Base typography
+   ========================================================================== */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1, "liga" 1;
+  padding-bottom: 12em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 650;
+  letter-spacing: -0.011em;
+}
+
+/* Theme changes shouldn't animate every element on the page. */
+.theme-transition,
+.theme-transition * {
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+              color 0.25s ease !important;
+}
+
+/*
+   Masthead
+   ========================================================================== */
+
+.masthead {
+  background: var(--global-masthead-bg);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+          backdrop-filter: saturate(180%) blur(12px);
+
+  &__inner-wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 0.75em 1em;
+  }
+}
+
+.masthead__menu {
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  min-width: 0;
+}
+
+.masthead__menu-item {
+  background-color: transparent;
+
+  &--lg a {
+    font-size: $type-size-4;
+    font-weight: 650;
+    letter-spacing: -0.015em;
+    color: var(--global-text-color);
+  }
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    font-weight: 500;
+
+    &:before {
+      height: 2px;
+      background: var(--global-accent-color);
+    }
+  }
+
+  button {
+    background-color: transparent;
+    color: var(--global-masthead-link-color);
+    border-radius: $border-radius;
+
+    .navicon,
+    .navicon:before,
+    .navicon:after {
+      background: currentColor;
+    }
+  }
+
+  /* dropdown for links that don't fit — inherits the active palette */
+  .hidden-links {
+    background: var(--global-surface-color);
+    box-shadow: var(--global-shadow-raised);
+
+    &:after {
+      border-color: var(--global-surface-color) transparent;
+    }
+  }
+}
+
+/*
+   Light / dark toggle
+   ========================================================================== */
+
+.theme-toggle {
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 0.75rem;
+  padding: 0;
+  color: var(--global-masthead-link-color);
+  background: transparent;
+  border: 1px solid var(--global-border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-accent-color);
+    border-color: var(--global-accent-color);
+    background: var(--global-accent-soft-color);
+  }
+
+  svg {
+    width: 17px;
+    height: 17px;
+    display: block;
+  }
+
+  .theme-toggle__sun {
+    display: none;
+  }
+}
+
+[data-theme="dark"] .theme-toggle {
+  .theme-toggle__moon {
+    display: none;
+  }
+
+  .theme-toggle__sun {
+    display: block;
+  }
+}
+
+/*
+   Page shell
+   ========================================================================== */
+
+#main {
+  margin-top: 2.5em;
+}
+
+.page {
+  .page__inner-wrap {
+    max-width: 60rem;
+  }
+}
+
+.page__title {
+  font-size: $type-size-2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.page__content {
+  font-size: $type-size-5;
+
+  p, li {
+    color: var(--global-text-color);
+  }
+
+  > h1,
+  > h2 {
+    margin-top: 2.25em;
+    padding-bottom: 0.4em;
+    font-size: $type-size-3;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  > h1:first-child,
+  > h2:first-child {
+    margin-top: 1.25em;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+
+    &:hover {
+      color: var(--global-link-color-hover);
+    }
+  }
+}
+
+/*
+   Publication list
+   ========================================================================== */
+
+.section-note {
+  margin-top: -0.5em;
+  color: var(--global-muted-text-color);
+  font-size: $type-size-6 * 1.15;
+}
+
+.publication-list {
+  margin: 1.25em 0 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    margin: 0 0 0.75rem;
+    padding: 1.05rem 1.25rem;
+    background: var(--global-surface-color);
+    border: 1px solid var(--global-border-color);
+    border-radius: 12px;
+    box-shadow: var(--global-shadow);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease,
+                -webkit-transform 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease,
+                transform 0.2s ease;
+
+    &:hover {
+      border-color: var(--global-accent-color);
+      box-shadow: var(--global-shadow-raised);
+      -webkit-transform: translateY(-2px);
+              transform: translateY(-2px);
+    }
+
+    /* authors line */
+    > p {
+      margin: 0;
+      color: var(--global-muted-text-color);
+      font-size: $type-size-6 * 1.15;
+      line-height: 1.6;
+    }
+  }
+
+  /* paper title */
+  > li > p > a:first-child {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    color: var(--global-text-color);
+    font-size: $type-size-5;
+    font-weight: 650;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-accent-color);
+    }
+  }
+
+  /* the site owner's name, highlighted in the author list */
+  > li > p > strong {
+    color: var(--global-text-color);
+    font-weight: 650;
+    box-shadow: inset 0 -0.3em 0 var(--global-accent-soft-color);
+  }
+
+  /* venue badge */
+  > li > p > em:last-child {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.2em 0.7em;
+    color: var(--global-accent-color);
+    background: var(--global-accent-soft-color);
+    border-radius: 999px;
+    font-size: $type-size-6;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+/*
+   Sidebar / author profile
+   ========================================================================== */
+
+.sidebar {
+  @include breakpoint($large) {
+    padding-right: 1em;
+  }
+
+  .author__avatar {
+    img {
+      max-width: 170px;
+      padding: 4px;
+      background: var(--global-surface-color);
+      border: 1px solid var(--global-border-color);
+      box-shadow: var(--global-shadow-raised);
+    }
+  }
+
+  .author__name {
+    font-size: $type-size-4;
+    font-weight: 650;
+    letter-spacing: -0.015em;
+  }
+
+  .author__bio {
+    color: var(--global-muted-text-color);
+    line-height: 1.5;
+  }
+
+  .author__urls {
+    li {
+      margin-bottom: 0.15em;
+      color: var(--global-muted-text-color);
+    }
+
+    a {
+      display: inline-block;
+      margin-left: -0.45em;
+      padding: 0.2em 0.45em;
+      border-radius: 6px;
+      color: var(--global-text-color);
+      transition: $global-transition;
+
+      &:hover {
+        color: var(--global-accent-color);
+        background: var(--global-accent-soft-color);
+        text-decoration: none;
+      }
+    }
+
+    .fas, .fab, .far, .ai {
+      color: var(--global-muted-text-color);
+    }
+
+    &:after {
+      border-color: var(--global-surface-color) transparent;
+    }
+  }
+}
+
+/* Separator between the profile card and the page body on wide screens */
+@media screen and (min-width: $sidebar-screen-min-width) {
+  .sidebar.sticky {
+    margin-top: 0; /* neutralise the theme's portrait-orientation offset */
+    border-right: 1px solid var(--global-border-color);
+  }
+}
+
+/* Below the sidebar breakpoint the stock theme lays the profile out with
+   `display: table-cell`, which refuses to wrap and pushes the whole document
+   wider than the viewport. Lay it out with flexbox instead. */
+@media screen and (max-width: $sidebar-screen-min-width - 1px) {
+  .sidebar {
+    margin-top: 0;
+    margin-bottom: 1.75em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--global-border-color);
+
+    > div[itemscope] {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+              align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .author__avatar {
+      display: block;
+      -webkit-box-flex: 0;
+              flex: 0 0 auto;
+      width: auto;
+      margin-right: 0.9rem;
+
+      img {
+        width: 60px;
+        max-width: 60px;
+        padding: 2px;
+      }
+    }
+
+    .author__content {
+      display: block;
+      -webkit-box-flex: 1;
+              flex: 1 1 10rem;
+      min-width: 0;
+      padding: 0;
+      line-height: 1.4;
+    }
+
+    .author__name {
+      margin: 0;
+      font-size: $type-size-5;
+    }
+
+    .author__bio {
+      margin: 0.15em 0 0;
+      font-size: $type-size-6 * 1.1;
+    }
+
+    .author__urls-wrapper {
+      display: block;
+      -webkit-box-flex: 0;
+              flex: 0 0 auto;
+      margin-left: auto;
+    }
+  }
+
+  .publication-list > li {
+    padding: 0.9rem 1rem;
+  }
+}
+
+/*
+   Footer
+   ========================================================================== */
+
+.page__footer {
+  background-color: var(--global-surface-alt-color);
+  border-top: 1px solid var(--global-border-color);
+  color: var(--global-muted-text-color);
+
+  footer {
+    padding-bottom: 1.5em;
+  }
+
+  a:hover {
+    color: var(--global-accent-color);
+    text-decoration: none;
+  }
+}
+
+.page__footer-follow {
+  a {
+    color: var(--global-text-color);
+  }
+
+  li {
+    letter-spacing: 0.03em;
+  }
+}
+
+/*
+   Misc components that hard-coded white in the stock theme
+   ========================================================================== */
+
+.toc {
+  background-color: var(--global-surface-color);
+}
+
+.btn {
+  font-weight: 600;
+
+  &--inverse {
+    background-color: var(--global-surface-color);
+
+    &:hover {
+      color: var(--global-accent-color) !important;
+      border-color: var(--global-accent-color) !important;
+    }
+  }
+}
+
+blockquote {
+  color: var(--global-muted-text-color);
+}
+
+::-moz-selection {
+  color: var(--global-bg-color);
+  background: var(--global-accent-color);
+}
+
+::selection {
+  color: var(--global-bg-color);
+  background: var(--global-accent-color);
+}

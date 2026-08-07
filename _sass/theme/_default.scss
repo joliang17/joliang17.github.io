@@ -1,8 +1,15 @@
 /* ==========================================================================
-   DEFAULT THEME
+   DEFAULT THEME — light + dark, switchable at runtime
+   --------------------------------------------------------------------------
+   The palette lives entirely in CSS custom properties, so the active theme is
+   decided in the browser (see the inline script in _includes/head.html and the
+   toggle in _includes/scripts.html) rather than at build time.
+
+     :root                  -> light palette (also the no-JS fallback)
+     [data-theme="dark"]    -> dark palette
    ========================================================================== */
 
-/* Color codes used for the theme */
+/* Color codes used for the theme (Sass-side, needed by a few partials) */
 $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
@@ -17,29 +24,75 @@ $success-color              : #62c462;
 $warning-color              : #f89406;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$border-radius              : 10px;
+$box-shadow                 : 0 1px 2px rgba(0, 0, 0, 0.06);
 $global-transition          : all 0.2s ease-in-out;
-$masthead-height            : 70px;
-$navicon-width              : 28px;
-$navicon-height             : 4px;
+$masthead-height            : 64px;
+$navicon-width              : 24px;
+$navicon-height             : 3px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Default light theme for the site */
+/* --------------------------------------------------------------------------
+   Light palette
+   -------------------------------------------------------------------------- */
 :root {
-    --global-base-color                 : #{$gray};
-    --global-bg-color                   : #fff;
-    --global-border-color               : #{$lighter-gray};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #2f7f93;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
-    --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
-    --global-text-color                 : #{$dark-gray};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$lighter-gray};
+    color-scheme                        : light;
+
+    /* new design tokens */
+    --global-surface-color              : #ffffff;
+    --global-surface-alt-color          : #f4f2ee;
+    --global-accent-color               : #146073;
+    --global-accent-soft-color          : rgba(20, 96, 115, 0.16);
+    --global-muted-text-color           : #5f6b73;
+    --global-shadow                     : 0 1px 2px rgba(24, 30, 36, 0.05);
+    --global-shadow-raised              : 0 6px 20px -6px rgba(24, 30, 36, 0.16);
+    --global-masthead-bg                : rgba(250, 249, 247, 0.82);
+
+    /* tokens the stock theme already relies on */
+    --global-base-color                 : #146073;
+    --global-bg-color                   : #faf9f7;
+    --global-border-color               : #e4e0da;
+    --global-code-background-color      : #f4f2ee;
+    --global-code-text-color            : #1f272e;
+    --global-fig-caption-color          : #5f6b73;
+    --global-link-color                 : #146073;
+    --global-link-color-hover           : #0d4351;
+    --global-link-color-visited         : #146073;
+    --global-masthead-link-color        : #384049;
+    --global-masthead-link-color-hover  : #146073;
+    --global-text-color                 : #1f272e;
+    --global-text-color-light           : #5f6b73;
+    --global-thead-color                : #efece7;
+}
+
+/* --------------------------------------------------------------------------
+   Dark palette
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] {
+    color-scheme                        : dark;
+
+    --global-surface-color              : #171b21;
+    --global-surface-alt-color          : #1d222a;
+    --global-accent-color               : #6fc4dc;
+    --global-accent-soft-color          : rgba(111, 196, 220, 0.18);
+    --global-muted-text-color           : #98a3ad;
+    --global-shadow                     : 0 1px 2px rgba(0, 0, 0, 0.4);
+    --global-shadow-raised              : 0 8px 24px -8px rgba(0, 0, 0, 0.65);
+    --global-masthead-bg                : rgba(15, 18, 22, 0.82);
+
+    --global-base-color                 : #6fc4dc;
+    --global-bg-color                   : #0f1216;
+    --global-border-color               : #272d36;
+    --global-code-background-color      : #1d222a;
+    --global-code-text-color            : #dfe4ea;
+    --global-fig-caption-color          : #98a3ad;
+    --global-link-color                 : #6fc4dc;
+    --global-link-color-hover           : #9bd9ea;
+    --global-link-color-visited         : #6fc4dc;
+    --global-masthead-link-color        : #c8d0d8;
+    --global-masthead-link-color-hover  : #6fc4dc;
+    --global-text-color                 : #dfe4ea;
+    --global-text-color-light           : #98a3ad;
+    --global-thead-color                : #1d222a;
 }

@@ -1,3 +1,46 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+  /* Light / dark toggle. The initial theme is applied in _includes/head.html
+     before first paint; this only handles user switching + persistence. */
+  (function () {
+    var root = document.documentElement;
+    var button = document.getElementById('theme-toggle');
+    if (!button) { return; }
+
+    var media = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function stored() {
+      try { return localStorage.getItem('site-theme'); } catch (e) { return null; }
+    }
+
+    function apply(theme) {
+      root.classList.add('theme-transition');
+      root.setAttribute('data-theme', theme);
+      button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      window.setTimeout(function () {
+        root.classList.remove('theme-transition');
+      }, 300);
+    }
+
+    button.setAttribute('aria-pressed', root.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
+
+    button.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('site-theme', next); } catch (e) {}
+      apply(next);
+    });
+
+    /* Follow the OS setting until the visitor picks a theme explicitly. */
+    var onSystemChange = function (event) {
+      if (!stored()) { apply(event.matches ? 'dark' : 'light'); }
+    };
+    if (media.addEventListener) {
+      media.addEventListener('change', onSystemChange);
+    } else if (media.addListener) {
+      media.addListener(onSystemChange);
+    }
+  })();
+</script>
+
 {% include analytics.html %}
