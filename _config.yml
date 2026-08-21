@@ -22,7 +22,7 @@ repository               : "joliang17/joliang17.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Yijun Liang"
   pronouns         : # example: "she/her"  
   bio              : "CS Ph.D. Student at University of Maryland, College Park"
