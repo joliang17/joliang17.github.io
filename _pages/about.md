@@ -55,6 +55,26 @@ Selected Publications
     </div>
   </li>
   <li>
+    <a class="pub-card__thumb" href="https://arxiv.org/abs/2608.06296"><img src="/images/teasers/uopsd.jpg" alt="U-OPSD teaser"></a>
+    <div class="pub-card__body">
+      <a class="pub-card__title" href="https://arxiv.org/abs/2608.06296">On-Policy Self-Distillation without Any Supervision</a>
+      <p class="pub-card__authors">Yijiang Li, Bingyang Wang, <strong>Yijun Liang</strong>, Yunjie Tian, Di Fu, Nuno Vasconcelos</p>
+      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
+        <a href="https://arxiv.org/abs/2608.06296">paper</a>
+        <a href="https://github.com/williamium3000/u-opsd">code</a>
+        <a href="https://williamium3000.github.io/u-opsd/">project page</a></p>
+    </div>
+  </li>
+  <li>
+    <a class="pub-card__thumb" href="https://arxiv.org/abs/2608.25356"><img src="/images/teasers/clueopsd.jpg" alt="Clue-OPSD teaser"></a>
+    <div class="pub-card__body">
+      <a class="pub-card__title" href="https://arxiv.org/abs/2608.25356">Where to Look Matters: On-Policy Self-Distillation for Long-Video Understanding</a>
+      <p class="pub-card__authors">Kaishen Wang, Dongdi Zhao, <strong>Yijun Liang</strong>, Dingqiang Ye, Ruibo Chen, Heng Huang, Di Fu</p>
+      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
+        <a href="https://arxiv.org/abs/2608.25356">paper</a></p>
+    </div>
+  </li>
+  <li>
     <a class="pub-card__thumb" href="https://arxiv.org/abs/2606.13929"><img src="/images/teasers/sevq.jpg" alt="SEVQ teaser"></a>
     <div class="pub-card__body">
       <a class="pub-card__title" href="https://arxiv.org/abs/2606.13929">Self-Evolving Visual Questioner</a>
