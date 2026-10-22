@@ -752,8 +752,7 @@ blockquote {
 .pub-tags {
   margin-top: 0.5rem;
 
-  .tag,
-  .publication-list > li > &.pub-tags > a.tag {
+  .tag {
     display: inline-block;
     margin: 0 0.35rem 0 0;
     padding: 0.1em 0.55em;
