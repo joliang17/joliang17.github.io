@@ -18,11 +18,11 @@ News
 ======
 
 <ul class="news-list">
-  <li><time>2026.08</time> Two new preprints on self-distillation without privileged supervision: <a href="https://arxiv.org/abs/2608.14144">S²VOPD</a> (vision) and <a href="https://arxiv.org/abs/2608.06296">U-OPSD</a> (language).</li>
-  <li><time>2026.07</time> <a href="https://arxiv.org/abs/2607.21556">Visual Contrastive Self-Distillation</a> is on arXiv — reward- and teacher-free on-policy self-distillation for VLMs. <a href="https://joliang17.github.io/VisualCSD/">Project page</a>.</li>
-  <li><time>2026.07</time> <a href="https://arxiv.org/abs/2512.11995">V-REX</a> is accepted to <strong>ECCV 2026</strong>; <a href="https://arxiv.org/abs/2603.06480">History-conditioned token pruning for VLN</a> is accepted to <strong>IROS 2026</strong>.</li>
-  <li><time>2026.06</time> <a href="https://arxiv.org/abs/2606.13929">Self-Evolving Visual Questioner</a> is on arXiv — VLMs that improve by asking themselves better questions.</li>
-  <li><time>2025.09</time> <a href="https://arxiv.org/abs/2504.10514">ColorBench</a> is accepted to <strong>NeurIPS 2025</strong>; received a NeurIPS 2025 Student Travel Award.</li>
+  <li><time>2026.08</time><span>Two new preprints on self-distillation without privileged supervision: <a href="https://arxiv.org/abs/2608.14144">S²VOPD</a> (vision) and <a href="https://arxiv.org/abs/2608.06296">U-OPSD</a> (language).</span></li>
+  <li><time>2026.07</time><span><a href="https://arxiv.org/abs/2607.21556">Visual Contrastive Self-Distillation</a> is on arXiv — reward- and teacher-free on-policy self-distillation for VLMs. <a href="https://joliang17.github.io/VisualCSD/">Project page</a>.</span></li>
+  <li><time>2026.07</time><span><a href="https://arxiv.org/abs/2512.11995">V-REX</a> is accepted to <strong>ECCV 2026</strong>; <a href="https://arxiv.org/abs/2603.06480">History-conditioned token pruning for VLN</a> is accepted to <strong>IROS 2026</strong>.</span></li>
+  <li><time>2026.06</time><span><a href="https://arxiv.org/abs/2606.13929">Self-Evolving Visual Questioner</a> is on arXiv — VLMs that improve by asking themselves better questions.</span></li>
+  <li><time>2025.09</time><span><a href="https://arxiv.org/abs/2504.10514">ColorBench</a> is accepted to <strong>NeurIPS 2025</strong>; received a NeurIPS 2025 Student Travel Award.</span></li>
 </ul>
 
 Selected Publications
