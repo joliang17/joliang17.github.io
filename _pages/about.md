@@ -7,84 +7,114 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year Ph.D. student in the Department of Computer Science at [University of Maryland, College Park](https://umd.edu/). 
+I am a fourth-year Ph.D. student in the Department of Computer Science at [University of Maryland, College Park](https://umd.edu/), advised by [Prof. Tianyi Zhou](https://tianyizhou.github.io/). 
 My research interests are data-centric AI, computer vision (CV), and vision-language models (VLMs), especially exploring synthetic data generation and self-improving learning paradigms to improve model training and evaluation.
+
+I am currently interested in **self-improving vision-language models** — training VLMs to create their own learning signal (on-policy self-distillation, self-evolving question generation) — and **agentic visual systems** that actively explore and gather evidence rather than answer in one shot.
 
 I got my M.Eng. degree in Industrial Engineering and Operations Research at [University of California, Berkeley](https://ieor.berkeley.edu/). Before joining UCB, I obtained my B.Eng. degree in Industrial Engineering at [Tsinghua University](https://www.ie.tsinghua.edu.cn/eng/). 
 
-[//]: # (I previously worked at ByteDance)
-
-Publications
+News
 ======
 
-\* denotes equal contribution.
+<ul class="news-list">
+  <li><time>2026.08</time> Two new preprints on self-distillation without privileged supervision: <a href="https://arxiv.org/abs/2608.14144">S²VOPD</a> (vision) and <a href="https://arxiv.org/abs/2608.06296">U-OPSD</a> (language).</li>
+  <li><time>2026.07</time> <a href="https://arxiv.org/abs/2607.21556">Visual Contrastive Self-Distillation</a> is on arXiv — reward- and teacher-free on-policy self-distillation for VLMs. <a href="https://joliang17.github.io/VisualCSD/">Project page</a>.</li>
+  <li><time>2026.07</time> <a href="https://arxiv.org/abs/2512.11995">V-REX</a> is accepted to <strong>ECCV 2026</strong>; <a href="https://arxiv.org/abs/2603.06480">History-conditioned token pruning for VLN</a> is accepted to <strong>IROS 2026</strong>.</li>
+  <li><time>2026.06</time> <a href="https://arxiv.org/abs/2606.13929">Self-Evolving Visual Questioner</a> is on arXiv — VLMs that improve by asking themselves better questions.</li>
+  <li><time>2025.09</time> <a href="https://arxiv.org/abs/2504.10514">ColorBench</a> is accepted to <strong>NeurIPS 2025</strong>; received a NeurIPS 2025 Student Travel Award.</li>
+</ul>
+
+Selected Publications
+======
+
+\* denotes equal contribution. See the <a href="/publications/">full list</a> for all papers.
 {: .section-note}
 
-1. [VideoResearcher: Self-Improving Tool Design for Long-Video Understanding](https://arxiv.org/abs/2609.19664)  
-   Dingqiang Ye, Dongdi Zhao, Kaishen Wang, Qingqiao Hu, Jingchen Sun, **Yijun Liang**, Yuqi Jia, Yiqiao Huang, Yunjie Tian, Jiaxing Zhang, Chuanyang Jin, Ke Zhang, Vishal M. Patel, Di Fu.  
-   *arXiv 2026*
+<ul class="pub-cards">
+  <li>
+    <a class="pub-card__thumb" href="https://arxiv.org/abs/2607.21556"><img src="/images/teasers/vcsd.jpg" alt="VCSD teaser"></a>
+    <div class="pub-card__body">
+      <a class="pub-card__title" href="https://arxiv.org/abs/2607.21556">Visual Contrastive Self-Distillation</a>
+      <p class="pub-card__authors"><strong>Yijun Liang</strong>, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu</p>
+      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
+        <a href="https://arxiv.org/abs/2607.21556">paper</a>
+        <a href="https://github.com/joliang17/VCSD">code</a>
+        <a href="https://joliang17.github.io/VisualCSD/">project page</a></p>
+    </div>
+  </li>
+  <li>
+    <a class="pub-card__thumb" href="https://arxiv.org/abs/2608.14144"><img src="/images/teasers/s2vopd.jpg" alt="S2VOPD teaser"></a>
+    <div class="pub-card__body">
+      <a class="pub-card__title" href="https://arxiv.org/abs/2608.14144">Self-Supervised Visual On-Policy Distillation</a>
+      <p class="pub-card__authors">Yijiang Li, <strong>Yijun Liang</strong>, Yunjie Tian, Bingyang Wang, Ke Zhang, Zhenfei Yin, Di Fu, Philip Torr, Nuno Vasconcelos</p>
+      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
+        <a href="https://arxiv.org/abs/2608.14144">paper</a>
+        <a href="https://github.com/williamium3000/s2vopd">code</a>
+        <a href="https://williamium3000.github.io/s2vopd/">project page</a></p>
+    </div>
+  </li>
+  <li>
+    <a class="pub-card__thumb" href="https://arxiv.org/abs/2606.13929"><img src="/images/teasers/sevq.jpg" alt="SEVQ teaser"></a>
+    <div class="pub-card__body">
+      <a class="pub-card__title" href="https://arxiv.org/abs/2606.13929">Self-Evolving Visual Questioner</a>
+      <p class="pub-card__authors"><strong>Yijun Liang</strong>, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou</p>
+      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
+        <a href="https://arxiv.org/abs/2606.13929">paper</a>
+        <a href="https://github.com/tianyi-lab/SelfEvolvingVQG">code</a>
+        <a href="https://joliang17.github.io/SelfEvolvingVQG/">project page</a></p>
+    </div>
+  </li>
+  <li>
+    <a class="pub-card__thumb" href="https://arxiv.org/abs/2512.11995"><img src="/images/teasers/vrex.jpg" alt="V-REX teaser"></a>
+    <div class="pub-card__body">
+      <a class="pub-card__title" href="https://arxiv.org/abs/2512.11995">V-REX: Benchmarking Exploratory Visual Reasoning via Chain-of-Questions</a>
+      <p class="pub-card__authors">Chenrui Fan*, <strong>Yijun Liang</strong>*, Shweta Bhardwaj*, Kwesi Cobbina, Ming Li, Tianyi Zhou</p>
+      <p class="pub-card__meta"><span class="venue">ECCV 2026</span>
+        <a href="https://arxiv.org/abs/2512.11995">paper</a>
+        <a href="https://github.com/tianyi-lab/VREX">code</a></p>
+    </div>
+  </li>
+  <li>
+    <a class="pub-card__thumb" href="https://arxiv.org/abs/2504.10514"><img src="/images/teasers/colorbench.jpg" alt="ColorBench teaser"></a>
+    <div class="pub-card__body">
+      <a class="pub-card__title" href="https://arxiv.org/abs/2504.10514">ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness</a>
+      <p class="pub-card__authors"><strong>Yijun Liang</strong>*, Ming Li*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou</p>
+      <p class="pub-card__meta"><span class="venue">NeurIPS 2025</span>
+        <a href="https://arxiv.org/abs/2504.10514">paper</a>
+        <a href="https://github.com/umd-huang-lab/ColorBench">code</a>
+        <a href="https://huggingface.co/datasets/umd-zhou-lab/ColorBench">dataset</a></p>
+    </div>
+  </li>
+  <li>
+    <a class="pub-card__thumb" href="https://arxiv.org/abs/2410.13674"><img src="/images/teasers/discl.jpg" alt="Diffusion Curriculum teaser"></a>
+    <div class="pub-card__body">
+      <a class="pub-card__title" href="https://arxiv.org/abs/2410.13674">Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion</a>
+      <p class="pub-card__authors"><strong>Yijun Liang</strong>*, Shweta Bhardwaj*, Tianyi Zhou</p>
+      <p class="pub-card__meta"><span class="venue">ICCV 2025</span>
+        <a href="https://arxiv.org/abs/2410.13674">paper</a>
+        <a href="https://github.com/tianyi-lab/DisCL">code</a></p>
+    </div>
+  </li>
+</ul>
 
-1. [Where to Look Matters: On-Policy Self-Distillation for Long-Video Understanding](https://arxiv.org/abs/2608.25356)  
-   Kaishen Wang, Dongdi Zhao, **Yijun Liang**, Dingqiang Ye, Ruibo Chen, Heng Huang, Di Fu.  
-   *arXiv 2026*
+<p class="more-link"><a href="/publications/">Full publication list →</a></p>
 
-1. [Self-Supervised Visual On-Policy Distillation](https://arxiv.org/abs/2608.14144)  
-   Yijiang Li, **Yijun Liang**, Yunjie Tian, Bingyang Wang, Ke Zhang, Zhenfei Yin, Di Fu, Philip Torr, Nuno Vasconcelos.  
-   *arXiv 2026*
+Education
+======
 
-1. [On-Policy Self-Distillation without Any Supervision](https://arxiv.org/abs/2608.06296)  
-   Yijiang Li, Bingyang Wang, **Yijun Liang**, Yunjie Tian, Di Fu, Nuno Vasconcelos.  
-   *arXiv 2026*
+<ul class="edu-list">
+  <li><div><strong>University of Maryland, College Park</strong><span>Ph.D. in Computer Science</span></div><time>2023 – present</time></li>
+  <li><div><strong>University of California, Berkeley</strong><span>M.Eng. in Industrial Engineering &amp; Operations Research</span></div><time>2019 – 2020</time></li>
+  <li><div><strong>Tsinghua University</strong><span>B.Eng. in Industrial Engineering</span></div><time>2015 – 2019</time></li>
+</ul>
 
-1. [Visual Contrastive Self-Distillation](https://arxiv.org/abs/2607.21556)  
-   **Yijun Liang**, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu.  
-   *arXiv 2026*
+Awards & Service
+======
 
-1. [Self-Evolving Visual Questioner](https://arxiv.org/abs/2606.13929)  
-   **Yijun Liang**, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou.  
-   *arXiv 2026*
-
-1. [LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment](https://arxiv.org/abs/2606.18709)  
-   Han Chen, Ming Li, Chenguang Wang, **Yijun Liang**, Dawei Zhou, Hong Jiao, Tianyi Zhou.  
-   *arXiv 2026*
-
-1. [Do Prompt-Elicited Trajectories Reflect Training-Time Reward Hacking? A Systematic Study on Monitoring Training-Time Reward Hacking in Code Generation](https://arxiv.org/abs/2604.23488)  
-   Lichen Li, Hengguang Zhou, **Yijun Liang**, Tianyi Zhou, Cho-Jui Hsieh.  
-   *arXiv 2026*
-
-1. [History-Conditioned Spatio-Temporal Visual Token Pruning for Efficient Vision-Language Navigation](https://arxiv.org/abs/2603.06480)  
-   Qitong Wang, **Yijun Liang**, Ming Li, Tianyi Zhou, Christopher Rasmussen.  
-   *IROS 2026*
-
-1. [V-REX: Benchmarking Exploratory Visual Reasoning via Chain-of-Questions](https://arxiv.org/abs/2512.11995)  
-   Chenrui Fan\*, **Yijun Liang**\*, Shweta Bhardwaj\*, Kwesi Cobbina, Ming Li, Tianyi Zhou.  
-   *ECCV 2026*
-
-1. [ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness](https://arxiv.org/abs/2504.10514)  
-   **Yijun Liang**\*, Ming Li\*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou.  
-   *NeurIPS 2025*
-
-1. [Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion](https://arxiv.org/abs/2410.13674)  
-   **Yijun Liang**\*, Shweta Bhardwaj\*, Tianyi Zhou.  
-   *ICCV 2025*
-
-1. [Mosaic-IT: Free Compositional Data Augmentation Improves Instruction Tuning](https://aclanthology.org/2025.findings-acl.1297/)  
-   Ming Li, Pei Chen, Chenguang Wang, Hongyu Zhao, **Yijun Liang**, Yupeng Hou, Fuxiao Liu, Tianyi Zhou.  
-   *ACL 2025*
-
-1. [CaughtCheating: Is Your MLLM a Good Cheating Detective? Exploring the Boundary of Visual Perception and Reasoning](https://arxiv.org/abs/2507.00045)  
-   Ming Li, Chenguang Wang, **Yijun Liang**, Xiyao Wang, Yuhang Zhou, Xiyang Wu, Yuqing Zhang, Ruiyi Zhang, Tianyi Zhou.  
-   *arXiv 2025*
-
-1. [PEDANTS: Cheap but Effective and Interpretable Answer Equivalence](https://arxiv.org/abs/2402.11161)  
-   Zongxia Li, Ishani Mondal, **Yijun Liang**, Huy Nghiem, Jordan Lee Boyd-Graber.  
-   *EMNLP 2024*
-
-1. [GeoDRL: A Self-Learning Framework for Geometry Problem Solving Using Reinforcement Learning in Deductive Reasoning](https://aclanthology.org/2023.findings-acl.850.pdf)  
-   Shuai Peng, Di Fu, **Yijun Liang**, Liangcai Gao, Zhi Tang.  
-   *ACL 2023*
-
-1. [Compute Like Humans: Interpretable Step-by-Step Symbolic Computation with Deep Neural Network](https://dl.acm.org/doi/abs/10.1145/3534678.3539276)  
-   Shuai Peng, Di Fu, Yong Cao, **Yijun Liang**, Gu Xu, Liangcai Gao, Zhi Tang.  
-   *KDD 2022*
-{: .publication-list}
+<ul class="compact-list">
+  <li><strong>Silver Reviewer Award</strong>, ICML 2026</li>
+  <li><strong>Student Travel Award</strong>, NeurIPS 2025</li>
+  <li><strong>Dean's Fellowship &amp; Chair's Fellowship</strong>, University of Maryland, 2023</li>
+  <li><strong>Reviewer</strong>: ICLR 2027, ICML 2026 &nbsp;·&nbsp; <strong>Program Committee</strong>: AAAI 2026</li>
+</ul>

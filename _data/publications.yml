@@ -1,0 +1,139 @@
+# Full publication list, newest first. Rendered by _pages/publications.html.
+# tags: benchmark | selfimprove | data | llm | embodied
+# first: true for first / co-first author papers
+
+- title: "VideoResearcher: Self-Improving Tool Design for Long-Video Understanding"
+  authors: "Dingqiang Ye, Dongdi Zhao, Kaishen Wang, Qingqiao Hu, Jingchen Sun, **Yijun Liang**, Yuqi Jia, Yiqiao Huang, Yunjie Tian, Jiaxing Zhang, Chuanyang Jin, Ke Zhang, Vishal M. Patel, Di Fu"
+  venue: "arXiv 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2609.19664
+  tags: [selfimprove]
+
+- title: "Where to Look Matters: On-Policy Self-Distillation for Long-Video Understanding"
+  authors: "Kaishen Wang, Dongdi Zhao, **Yijun Liang**, Dingqiang Ye, Ruibo Chen, Heng Huang, Di Fu"
+  venue: "arXiv 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2608.25356
+  tags: [selfimprove]
+
+- title: "Self-Supervised Visual On-Policy Distillation"
+  authors: "Yijiang Li, **Yijun Liang**, Yunjie Tian, Bingyang Wang, Ke Zhang, Zhenfei Yin, Di Fu, Philip Torr, Nuno Vasconcelos"
+  venue: "arXiv 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2608.14144
+  code: https://github.com/williamium3000/s2vopd
+  page: https://williamium3000.github.io/s2vopd/
+  tags: [selfimprove]
+
+- title: "On-Policy Self-Distillation without Any Supervision"
+  authors: "Yijiang Li, Bingyang Wang, **Yijun Liang**, Yunjie Tian, Di Fu, Nuno Vasconcelos"
+  venue: "arXiv 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2608.06296
+  code: https://github.com/williamium3000/u-opsd
+  page: https://williamium3000.github.io/u-opsd/
+  tags: [selfimprove, llm]
+
+- title: "Visual Contrastive Self-Distillation"
+  authors: "**Yijun Liang**, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu"
+  venue: "arXiv 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2607.21556
+  code: https://github.com/joliang17/VCSD
+  page: https://joliang17.github.io/VisualCSD/
+  tags: [selfimprove]
+  first: true
+
+- title: "Self-Evolving Visual Questioner"
+  authors: "**Yijun Liang**, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou"
+  venue: "arXiv 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2606.13929
+  code: https://github.com/tianyi-lab/SelfEvolvingVQG
+  page: https://joliang17.github.io/SelfEvolvingVQG/
+  tags: [selfimprove, data]
+  first: true
+
+- title: "LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment"
+  authors: "Han Chen, Ming Li, Chenguang Wang, **Yijun Liang**, Dawei Zhou, Hong Jiao, Tianyi Zhou"
+  venue: "arXiv 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2606.18709
+  tags: [llm]
+
+- title: "Do Prompt-Elicited Trajectories Reflect Training-Time Reward Hacking? A Systematic Study on Monitoring Training-Time Reward Hacking in Code Generation"
+  authors: "Lichen Li, Hengguang Zhou, **Yijun Liang**, Tianyi Zhou, Cho-Jui Hsieh"
+  venue: "arXiv 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2604.23488
+  tags: [llm]
+
+- title: "V-REX: Benchmarking Exploratory Visual Reasoning via Chain-of-Questions"
+  authors: "Chenrui Fan\\*, **Yijun Liang**\\*, Shweta Bhardwaj\\*, Kwesi Cobbina, Ming Li, Tianyi Zhou"
+  venue: "ECCV 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2512.11995
+  code: https://github.com/tianyi-lab/VREX
+  tags: [benchmark]
+  first: true
+
+- title: "History-Conditioned Spatio-Temporal Visual Token Pruning for Efficient Vision-Language Navigation"
+  authors: "Qitong Wang, **Yijun Liang**, Ming Li, Tianyi Zhou, Christopher Rasmussen"
+  venue: "IROS 2026"
+  year: 2026
+  url: https://arxiv.org/abs/2603.06480
+  tags: [embodied]
+
+- title: "ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness"
+  authors: "**Yijun Liang**\\*, Ming Li\\*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou"
+  venue: "NeurIPS 2025"
+  year: 2025
+  url: https://arxiv.org/abs/2504.10514
+  code: https://github.com/umd-huang-lab/ColorBench
+  data: https://huggingface.co/datasets/umd-zhou-lab/ColorBench
+  tags: [benchmark]
+  first: true
+
+- title: "Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion"
+  authors: "**Yijun Liang**\\*, Shweta Bhardwaj\\*, Tianyi Zhou"
+  venue: "ICCV 2025"
+  year: 2025
+  url: https://arxiv.org/abs/2410.13674
+  code: https://github.com/tianyi-lab/DisCL
+  tags: [data]
+  first: true
+
+- title: "Mosaic-IT: Free Compositional Data Augmentation Improves Instruction Tuning"
+  authors: "Ming Li, Pei Chen, Chenguang Wang, Hongyu Zhao, **Yijun Liang**, Yupeng Hou, Fuxiao Liu, Tianyi Zhou"
+  venue: "ACL 2025"
+  year: 2025
+  url: https://aclanthology.org/2025.findings-acl.1297/
+  tags: [data, llm]
+
+- title: "CaughtCheating: Is Your MLLM a Good Cheating Detective? Exploring the Boundary of Visual Perception and Reasoning"
+  authors: "Ming Li, Chenguang Wang, **Yijun Liang**, Xiyao Wang, Yuhang Zhou, Xiyang Wu, Yuqing Zhang, Ruiyi Zhang, Tianyi Zhou"
+  venue: "arXiv 2025"
+  year: 2025
+  url: https://arxiv.org/abs/2507.00045
+  tags: [benchmark]
+
+- title: "PEDANTS: Cheap but Effective and Interpretable Answer Equivalence"
+  authors: "Zongxia Li, Ishani Mondal, **Yijun Liang**, Huy Nghiem, Jordan Lee Boyd-Graber"
+  venue: "EMNLP 2024"
+  year: 2024
+  url: https://arxiv.org/abs/2402.11161
+  tags: [llm]
+
+- title: "GeoDRL: A Self-Learning Framework for Geometry Problem Solving Using Reinforcement Learning in Deductive Reasoning"
+  authors: "Shuai Peng, Di Fu, **Yijun Liang**, Liangcai Gao, Zhi Tang"
+  venue: "ACL 2023"
+  year: 2023
+  url: https://aclanthology.org/2023.findings-acl.850.pdf
+  tags: [llm]
+
+- title: "Compute Like Humans: Interpretable Step-by-Step Symbolic Computation with Deep Neural Network"
+  authors: "Shuai Peng, Di Fu, Yong Cao, **Yijun Liang**, Gu Xu, Liangcai Gao, Zhi Tang"
+  venue: "KDD 2022"
+  year: 2022
+  url: https://dl.acm.org/doi/abs/10.1145/3534678.3539276
+  tags: [llm]

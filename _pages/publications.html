@@ -5,32 +5,82 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+{% assign tag_names = "benchmark:VLM perception & benchmarks,selfimprove:Self-improvement & post-training,data:Data synthesis & curriculum,llm:LLM evaluation & reasoning,embodied:Embodied & navigation" | split: "," %}
 
-{% include base_path %}
+<p class="section-note">\* denotes equal contribution. Also on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<div class="pub-filters" role="group" aria-label="Filter by topic">
+  <span class="pub-filters__label">Topic</span>
+  <button class="chip is-active" type="button" data-filter-tag="all">All</button>
+  {% for pair in tag_names %}{% assign kv = pair | split: ":" %}
+  <button class="chip" type="button" data-filter-tag="{{ kv[0] }}">{{ kv[1] }}</button>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+</div>
+<div class="pub-filters" role="group" aria-label="Filter by authorship">
+  <span class="pub-filters__label">Role</span>
+  <button class="chip is-active" type="button" data-filter-role="all">All</button>
+  <button class="chip" type="button" data-filter-role="first">First / co-first author</button>
+</div>
 
+{% assign years = site.data.publications | map: "year" | uniq %}
+{% for year in years %}
+<h2 class="pub-year" data-year="{{ year }}">{{ year }}</h2>
+<ul class="publication-list" data-year="{{ year }}">
+  {% for pub in site.data.publications %}{% if pub.year == year %}
+  <li data-tags="{{ pub.tags | join: ' ' }}" data-first="{{ pub.first | default: false }}">
+    <p><a href="{{ pub.url }}">{{ pub.title }}</a><br>
+    {{ pub.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}<br>
+    <em>{{ pub.venue }}</em></p>
+    <p class="pub-tags">
+      {% if pub.code %}<a class="tag" href="{{ pub.code }}">code</a>{% endif %}
+      {% if pub.page %}<a class="tag" href="{{ pub.page }}">project page</a>{% endif %}
+      {% if pub.data %}<a class="tag" href="{{ pub.data }}">dataset</a>{% endif %}
+      {% for t in pub.tags %}{% for pair in tag_names %}{% assign kv = pair | split: ":" %}{% if kv[0] == t %}<span class="tag">{{ kv[1] }}</span>{% endif %}{% endfor %}{% endfor %}
+    </p>
+  </li>
+  {% endif %}{% endfor %}
+</ul>
+{% endfor %}
 
+<p class="pub-empty">No papers match the selected filters.</p>
 
+<script>
+(function () {
+  var tag = 'all', role = 'all';
+  var items = document.querySelectorAll('.publication-list > li');
+  var yearHeads = document.querySelectorAll('.pub-year');
+  var empty = document.querySelector('.pub-empty');
+
+  function apply() {
+    var shown = 0;
+    items.forEach(function (li) {
+      var tags = (li.getAttribute('data-tags') || '').split(' ');
+      var ok = (tag === 'all' || tags.indexOf(tag) !== -1) &&
+               (role === 'all' || li.getAttribute('data-first') === 'true');
+      li.classList.toggle('is-hidden', !ok);
+      if (ok) shown++;
+    });
+    yearHeads.forEach(function (h) {
+      var list = document.querySelector('.publication-list[data-year="' + h.getAttribute('data-year') + '"]');
+      var any = list && list.querySelector('li:not(.is-hidden)');
+      h.classList.toggle('is-hidden', !any);
+      if (list) list.classList.toggle('is-hidden', !any);
+    });
+    empty.classList.toggle('is-visible', shown === 0);
+  }
+
+  function bind(attr, setter) {
+    var chips = document.querySelectorAll('[' + attr + ']');
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('is-active'); });
+        chip.classList.add('is-active');
+        setter(chip.getAttribute(attr));
+        apply();
+      });
+    });
+  }
+  bind('data-filter-tag', function (v) { tag = v; });
+  bind('data-filter-role', function (v) { role = v; });
+})();
+</script>
