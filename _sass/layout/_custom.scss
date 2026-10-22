@@ -752,7 +752,8 @@ blockquote {
 .pub-tags {
   margin-top: 0.5rem;
 
-  .tag {
+  .tag,
+  .publication-list > li > &.pub-tags > a.tag {
     display: inline-block;
     margin: 0 0.35rem 0 0;
     padding: 0.1em 0.55em;
@@ -771,5 +772,22 @@ blockquote {
 
   &.is-visible {
     display: block;
+  }
+}
+
+.publication-list > li > p.pub-tags > a.tag {
+  display: inline-block;
+  margin: 0 0.35rem 0 0;
+  padding: 0.1em 0.55em;
+  color: var(--global-muted-text-color);
+  font-size: $type-size-6;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-accent-color);
+    border-color: var(--global-accent-color);
   }
 }
