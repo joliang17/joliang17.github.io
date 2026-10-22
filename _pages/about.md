@@ -20,6 +20,22 @@ Publications
 \* denotes equal contribution.
 {: .section-note}
 
+1. [VideoResearcher: Self-Improving Tool Design for Long-Video Understanding](https://arxiv.org/abs/2609.19664)  
+   Dingqiang Ye, Dongdi Zhao, Kaishen Wang, Qingqiao Hu, Jingchen Sun, **Yijun Liang**, Yuqi Jia, Yiqiao Huang, Yunjie Tian, Jiaxing Zhang, Chuanyang Jin, Ke Zhang, Vishal M. Patel, Di Fu.  
+   *arXiv 2026*
+
+1. [Where to Look Matters: On-Policy Self-Distillation for Long-Video Understanding](https://arxiv.org/abs/2608.25356)  
+   Kaishen Wang, Dongdi Zhao, **Yijun Liang**, Dingqiang Ye, Ruibo Chen, Heng Huang, Di Fu.  
+   *arXiv 2026*
+
+1. [Self-Supervised Visual On-Policy Distillation](https://arxiv.org/abs/2608.14144)  
+   Yijiang Li, **Yijun Liang**, Yunjie Tian, Bingyang Wang, Ke Zhang, Zhenfei Yin, Di Fu, Philip Torr, Nuno Vasconcelos.  
+   *arXiv 2026*
+
+1. [On-Policy Self-Distillation without Any Supervision](https://arxiv.org/abs/2608.06296)  
+   Yijiang Li, Bingyang Wang, **Yijun Liang**, Yunjie Tian, Di Fu, Nuno Vasconcelos.  
+   *arXiv 2026*
+
 1. [Visual Contrastive Self-Distillation](https://arxiv.org/abs/2607.21556)  
    **Yijun Liang**, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu.  
    *arXiv 2026*
@@ -32,7 +48,7 @@ Publications
    Han Chen, Ming Li, Chenguang Wang, **Yijun Liang**, Dawei Zhou, Hong Jiao, Tianyi Zhou.  
    *arXiv 2026*
 
-1. [Do Prompt-Elicited Trajectories Reflect Training-Time Reward Hacking? A Systematic Study on Monitoring Training-Time Reward Hacking in Code Generations](https://arxiv.org/abs/2604.23488)  
+1. [Do Prompt-Elicited Trajectories Reflect Training-Time Reward Hacking? A Systematic Study on Monitoring Training-Time Reward Hacking in Code Generation](https://arxiv.org/abs/2604.23488)  
    Lichen Li, Hengguang Zhou, **Yijun Liang**, Tianyi Zhou, Cho-Jui Hsieh.  
    *arXiv 2026*
 
