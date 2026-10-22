@@ -24,100 +24,48 @@ News
   <li><time>2025.09</time><span><a href="https://arxiv.org/abs/2504.10514">ColorBench</a> is accepted to <strong>NeurIPS 2025</strong>; received a NeurIPS 2025 Student Travel Award.</span></li>
 </ul>
 
-Selected Publications
+Publications
 ======
 
-\* denotes equal contribution. See the <a href="/publications/">full list</a> for all papers.
-{: .section-note}
+<div class="pub-toggle" role="group" aria-label="Publication view">
+  <button class="chip is-active" type="button" data-pub-view="selected">Selected</button>
+  <button class="chip" type="button" data-pub-view="all">All ({{ site.data.publications | size }})</button>
+  <span class="section-note pub-toggle__note">* denotes equal contribution</span>
+</div>
 
 <ul class="pub-cards">
-  <li>
-    <a class="pub-card__thumb" href="https://arxiv.org/abs/2607.21556"><img src="/images/teasers/vcsd.jpg" alt="VCSD teaser"></a>
+{% for pub in site.data.publications %}
+  <li class="pub-card{% unless pub.selected %} pub-card--extra is-hidden{% endunless %}">
+    {% if pub.teaser %}<a class="pub-card__thumb" href="{{ pub.url }}"><img src="/images/teasers/{{ pub.teaser }}" alt="" loading="lazy"></a>{% endif %}
     <div class="pub-card__body">
-      <a class="pub-card__title" href="https://arxiv.org/abs/2607.21556">Visual Contrastive Self-Distillation</a>
-      <p class="pub-card__authors"><strong>Yijun Liang</strong>, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu</p>
-      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
-        <a href="https://arxiv.org/abs/2607.21556">paper</a>
-        <a href="https://github.com/joliang17/VCSD">code</a>
-        <a href="https://joliang17.github.io/VisualCSD/">project page</a></p>
+      <a class="pub-card__title" href="{{ pub.url }}">{{ pub.title }}</a>
+      <p class="pub-card__authors">{{ pub.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+      <p class="pub-card__meta"><span class="venue">{{ pub.venue }}</span>
+        <a href="{{ pub.url }}">paper</a>
+        {% if pub.code %}<a href="{{ pub.code }}">code</a>{% endif %}
+        {% if pub.page %}<a href="{{ pub.page }}">project page</a>{% endif %}
+        {% if pub.data %}<a href="{{ pub.data }}">dataset</a>{% endif %}</p>
     </div>
   </li>
-  <li>
-    <a class="pub-card__thumb" href="https://arxiv.org/abs/2608.14144"><img src="/images/teasers/s2vopd.jpg" alt="S2VOPD teaser"></a>
-    <div class="pub-card__body">
-      <a class="pub-card__title" href="https://arxiv.org/abs/2608.14144">Self-Supervised Visual On-Policy Distillation</a>
-      <p class="pub-card__authors">Yijiang Li, <strong>Yijun Liang</strong>, Yunjie Tian, Bingyang Wang, Ke Zhang, Zhenfei Yin, Di Fu, Philip Torr, Nuno Vasconcelos</p>
-      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
-        <a href="https://arxiv.org/abs/2608.14144">paper</a>
-        <a href="https://github.com/williamium3000/s2vopd">code</a>
-        <a href="https://williamium3000.github.io/s2vopd/">project page</a></p>
-    </div>
-  </li>
-  <li>
-    <a class="pub-card__thumb" href="https://arxiv.org/abs/2608.06296"><img src="/images/teasers/uopsd.jpg" alt="U-OPSD teaser"></a>
-    <div class="pub-card__body">
-      <a class="pub-card__title" href="https://arxiv.org/abs/2608.06296">On-Policy Self-Distillation without Any Supervision</a>
-      <p class="pub-card__authors">Yijiang Li, Bingyang Wang, <strong>Yijun Liang</strong>, Yunjie Tian, Di Fu, Nuno Vasconcelos</p>
-      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
-        <a href="https://arxiv.org/abs/2608.06296">paper</a>
-        <a href="https://github.com/williamium3000/u-opsd">code</a>
-        <a href="https://williamium3000.github.io/u-opsd/">project page</a></p>
-    </div>
-  </li>
-  <li>
-    <a class="pub-card__thumb" href="https://arxiv.org/abs/2608.25356"><img src="/images/teasers/clueopsd.jpg" alt="Clue-OPSD teaser"></a>
-    <div class="pub-card__body">
-      <a class="pub-card__title" href="https://arxiv.org/abs/2608.25356">Where to Look Matters: On-Policy Self-Distillation for Long-Video Understanding</a>
-      <p class="pub-card__authors">Kaishen Wang, Dongdi Zhao, <strong>Yijun Liang</strong>, Dingqiang Ye, Ruibo Chen, Heng Huang, Di Fu</p>
-      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
-        <a href="https://arxiv.org/abs/2608.25356">paper</a></p>
-    </div>
-  </li>
-  <li>
-    <a class="pub-card__thumb" href="https://arxiv.org/abs/2606.13929"><img src="/images/teasers/sevq.jpg" alt="SEVQ teaser"></a>
-    <div class="pub-card__body">
-      <a class="pub-card__title" href="https://arxiv.org/abs/2606.13929">Self-Evolving Visual Questioner</a>
-      <p class="pub-card__authors"><strong>Yijun Liang</strong>, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou</p>
-      <p class="pub-card__meta"><span class="venue">arXiv 2026</span>
-        <a href="https://arxiv.org/abs/2606.13929">paper</a>
-        <a href="https://github.com/tianyi-lab/SelfEvolvingVQG">code</a>
-        <a href="https://joliang17.github.io/SelfEvolvingVQG/">project page</a></p>
-    </div>
-  </li>
-  <li>
-    <a class="pub-card__thumb" href="https://arxiv.org/abs/2512.11995"><img src="/images/teasers/vrex.jpg" alt="V-REX teaser"></a>
-    <div class="pub-card__body">
-      <a class="pub-card__title" href="https://arxiv.org/abs/2512.11995">V-REX: Benchmarking Exploratory Visual Reasoning via Chain-of-Questions</a>
-      <p class="pub-card__authors">Chenrui Fan*, <strong>Yijun Liang</strong>*, Shweta Bhardwaj*, Kwesi Cobbina, Ming Li, Tianyi Zhou</p>
-      <p class="pub-card__meta"><span class="venue">ECCV 2026</span>
-        <a href="https://arxiv.org/abs/2512.11995">paper</a>
-        <a href="https://github.com/tianyi-lab/VREX">code</a></p>
-    </div>
-  </li>
-  <li>
-    <a class="pub-card__thumb" href="https://arxiv.org/abs/2504.10514"><img src="/images/teasers/colorbench.jpg" alt="ColorBench teaser"></a>
-    <div class="pub-card__body">
-      <a class="pub-card__title" href="https://arxiv.org/abs/2504.10514">ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness</a>
-      <p class="pub-card__authors"><strong>Yijun Liang</strong>*, Ming Li*, Chenrui Fan, Ziyue Li, Dang Nguyen, Kwesi Adu Cobbina, Shweta Bhardwaj, Jiuhai Chen, Fuxiao Liu, Tianyi Zhou</p>
-      <p class="pub-card__meta"><span class="venue">NeurIPS 2025</span>
-        <a href="https://arxiv.org/abs/2504.10514">paper</a>
-        <a href="https://github.com/umd-huang-lab/ColorBench">code</a>
-        <a href="https://huggingface.co/datasets/umd-zhou-lab/ColorBench">dataset</a></p>
-    </div>
-  </li>
-  <li>
-    <a class="pub-card__thumb" href="https://arxiv.org/abs/2410.13674"><img src="/images/teasers/discl.jpg" alt="Diffusion Curriculum teaser"></a>
-    <div class="pub-card__body">
-      <a class="pub-card__title" href="https://arxiv.org/abs/2410.13674">Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion</a>
-      <p class="pub-card__authors"><strong>Yijun Liang</strong>*, Shweta Bhardwaj*, Tianyi Zhou</p>
-      <p class="pub-card__meta"><span class="venue">ICCV 2025</span>
-        <a href="https://arxiv.org/abs/2410.13674">paper</a>
-        <a href="https://github.com/tianyi-lab/DisCL">code</a></p>
-    </div>
-  </li>
+{% endfor %}
 </ul>
 
-<p class="more-link"><a href="/publications/">Full publication list →</a></p>
+<p class="more-link"><a href="/publications/">Browse by topic →</a></p>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('[data-pub-view]');
+  var extras = document.querySelectorAll('.pub-card--extra');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('is-active'); });
+      chip.classList.add('is-active');
+      var showAll = chip.getAttribute('data-pub-view') === 'all';
+      extras.forEach(function (li) { li.classList.toggle('is-hidden', !showAll); });
+    });
+  });
+})();
+</script>
 
 Education
 ======

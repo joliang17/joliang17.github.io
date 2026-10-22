@@ -1,6 +1,7 @@
 # Full publication list, newest first. Rendered by _pages/publications.html.
 # tags: benchmark | selfimprove | data | llm | embodied
 # first: true for first / co-first author papers
+# selected: true + teaser: shown on the homepage "Selected" view (images in /images/teasers/)
 
 - title: "VideoResearcher: Self-Improving Tool Design for Long-Video Understanding"
   authors: "Dingqiang Ye, Dongdi Zhao, Kaishen Wang, Qingqiao Hu, Jingchen Sun, **Yijun Liang**, Yuqi Jia, Yiqiao Huang, Yunjie Tian, Jiaxing Zhang, Chuanyang Jin, Ke Zhang, Vishal M. Patel, Di Fu"
@@ -15,6 +16,8 @@
   year: 2026
   url: https://arxiv.org/abs/2608.25356
   tags: [selfimprove]
+  selected: true
+  teaser: clueopsd.jpg
 
 - title: "Self-Supervised Visual On-Policy Distillation"
   authors: "Yijiang Li, **Yijun Liang**, Yunjie Tian, Bingyang Wang, Ke Zhang, Zhenfei Yin, Di Fu, Philip Torr, Nuno Vasconcelos"
@@ -24,6 +27,8 @@
   code: https://github.com/williamium3000/s2vopd
   page: https://williamium3000.github.io/s2vopd/
   tags: [selfimprove]
+  selected: true
+  teaser: s2vopd.jpg
 
 - title: "On-Policy Self-Distillation without Any Supervision"
   authors: "Yijiang Li, Bingyang Wang, **Yijun Liang**, Yunjie Tian, Di Fu, Nuno Vasconcelos"
@@ -33,6 +38,8 @@
   code: https://github.com/williamium3000/u-opsd
   page: https://williamium3000.github.io/u-opsd/
   tags: [selfimprove, llm]
+  selected: true
+  teaser: uopsd.jpg
 
 - title: "Visual Contrastive Self-Distillation"
   authors: "**Yijun Liang**, Yunjie Tian, Yijiang Li, Yuqi Jia, Furong Huang, Tianyi Zhou, Di Fu"
@@ -43,6 +50,8 @@
   page: https://joliang17.github.io/VisualCSD/
   tags: [selfimprove]
   first: true
+  selected: true
+  teaser: vcsd.jpg
 
 - title: "Self-Evolving Visual Questioner"
   authors: "**Yijun Liang**, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou"
@@ -53,6 +62,8 @@
   page: https://joliang17.github.io/SelfEvolvingVQG/
   tags: [selfimprove, data]
   first: true
+  selected: true
+  teaser: sevq.jpg
 
 - title: "LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment"
   authors: "Han Chen, Ming Li, Chenguang Wang, **Yijun Liang**, Dawei Zhou, Hong Jiao, Tianyi Zhou"
@@ -76,6 +87,8 @@
   code: https://github.com/tianyi-lab/VREX
   tags: [benchmark]
   first: true
+  selected: true
+  teaser: vrex.jpg
 
 - title: "History-Conditioned Spatio-Temporal Visual Token Pruning for Efficient Vision-Language Navigation"
   authors: "Qitong Wang, **Yijun Liang**, Ming Li, Tianyi Zhou, Christopher Rasmussen"
@@ -93,6 +106,8 @@
   data: https://huggingface.co/datasets/umd-zhou-lab/ColorBench
   tags: [benchmark]
   first: true
+  selected: true
+  teaser: colorbench.jpg
 
 - title: "Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion"
   authors: "**Yijun Liang**\\*, Shweta Bhardwaj\\*, Tianyi Zhou"
@@ -102,6 +117,8 @@
   code: https://github.com/tianyi-lab/DisCL
   tags: [data]
   first: true
+  selected: true
+  teaser: discl.jpg
 
 - title: "Mosaic-IT: Free Compositional Data Augmentation Improves Instruction Tuning"
   authors: "Ming Li, Pei Chen, Chenguang Wang, Hongyu Zhao, **Yijun Liang**, Yupeng Hou, Fuxiao Liu, Tianyi Zhou"
